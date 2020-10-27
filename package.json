@@ -1,0 +1,20 @@
+{
+  "name": "mernbackened",
+  "version": "1.0.0",
+  "description": "mernStack API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "predev": "fuser -k 8000/tcp && echo 'Terminated' || echo 'Nothing was running on the PORT'"
+  },
+  "author": "nobel",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}
